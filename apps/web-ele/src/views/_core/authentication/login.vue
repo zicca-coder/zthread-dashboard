@@ -1,5 +1,5 @@
 <!--
- * @Descripttion: 
+ * @Descripttion:
  * @version: 1.0.0
  * @Author: fulei🐰
  * @Date: 2025-06-07 09:41:08
@@ -49,11 +49,11 @@ const input = ref('');
 const originalPassword = ref('');
 
 // 在组件初始化时检测域名
-const isNageofferDomain = window.location.hostname.includes('nageoffer.com');
+const isNageofferDomain = window.location.hostname.includes('zicca.com');
 
 const loginFn = (values: Recordable<any>) => {
   loginPayload.value = values;
-  
+
   if (isNageofferDomain) {
     // 存储原始密码
     originalPassword.value = values.password;
@@ -96,13 +96,13 @@ const loginAuth = async () => {
       ...loginPayload.value,
       password: input.value // 验证码作为密码
     };
-    
+
     const success = await authStore.authLogin(loginData);
 
     if (success?.userInfo) {
       dialogVisible.value = false;
       input.value = ''; // 清除验证码
-      
+
       // 恢复原始密码值（为可能的后续操作）
       loginPayload.value.password = originalPassword.value;
     } else {
@@ -119,7 +119,7 @@ const loginAuth = async () => {
       type: 'error',
       title: '错误',
     });
-    
+
     // 发生错误时同样恢复原始密码
     loginPayload.value.password = originalPassword.value;
   }
@@ -172,7 +172,7 @@ const getImgSrc = () => {
           扫描下方二维码，关注后回复：<span class="code">thread</span>，获取动态线程池系统人机验证码
         </p>
         <img class="qrcode" :src="getImgSrc()" alt="二维码" />
-        
+
         <!-- 使用弹性布局容器包裹整个输入区域 -->
         <div class="captcha-input-container">
           <!-- 标签与星号合并为单独容器 -->
@@ -180,7 +180,7 @@ const getImgSrc = () => {
             <span class="required-star">*</span>
             <span>验证码：</span>
           </div>
-          
+
           <!-- 独立容器包裹输入框 -->
           <div class="input-field">
             <el-input

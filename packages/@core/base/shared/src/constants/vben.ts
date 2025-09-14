@@ -1,20 +1,19 @@
 /**
  * @zh_CN GITHUB 仓库地址
  */
-export const VBEN_GITHUB_URL = 'https://t.zsxq.com/ziDKV';
+export const VBEN_GITHUB_URL = 'https://github.com/zicca-coder';
 
 /**
  * @zh_CN 文档地址
  */
-export const VBEN_DOC_URL = 'https://nageoffer.com/onethread';
+export const VBEN_DOC_URL = 'https://github.com/zicca-coder/zthread';
 
-export const DOC_PLANET_URL = 'https://nageoffer.com/planet';
+export const DOC_PLANET_URL = 'https://github.com/zicca-coder/zthread';
 
 /**
  * @zh_CN Vben Logo
  */
-export const VBEN_LOGO_URL =
-  'https://oss.open8gu.com/IMG_3714.JPG';
+export const VBEN_LOGO_URL = 'https://oss.open8gu.com/IMG_3714.JPG';
 
 /**
  * @zh_CN Vben Admin 首页地址

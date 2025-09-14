@@ -1,5 +1,5 @@
 <!--
- * @Descripttion: 
+ * @Descripttion:
  * @version: 1.0.0
  * @Author: fulei🐰
  * @Date: 2025-06-07 10:34:27
@@ -19,7 +19,7 @@ async function loadGrafanaUrl() {
   } catch (error) {
     console.error('获取Grafana地址失败', error)
     // 失败时给一个默认值，防止空白
-    grafanaUrl.value = `http://grafana.nageoffer.com/d/bw9LFRhVkM/2a2f463?theme=light&orgId=1&from=now-12h&to=now&timezone=browser&var-app=12306-service&var-url=$__all&var-upstream=$__all&refresh=30s`
+    grafanaUrl.value = `http://192.168.17.128:3000/d/gxBvKxYNz/e58aa8-e68081-e7babf-e7a88b-e6b1a0?orgId=1&theme=light&from=now-12h&to=now&timezone=browser&var-application_name=&var-dynamic_thread_pool_id=&refresh=5s`
   }
 }
 
@@ -32,9 +32,9 @@ onMounted(() => {
   <Page>
     <!-- 居中提示行 -->
     <div style="text-align: center; margin: 12px 0;">
-      <a 
-        :href="grafanaUrl" 
-        target="_blank" 
+      <a
+        :href="grafanaUrl"
+        target="_blank"
         title="在新窗口中全屏查看"
         style="color: #409EFF; text-decoration: none;"
       >

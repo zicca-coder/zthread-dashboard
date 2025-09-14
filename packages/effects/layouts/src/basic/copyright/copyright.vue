@@ -42,7 +42,7 @@ withDefaults(defineProps<Props>(), {
       class="hover:text-primary-hover mx-1"
       target="_blank"
     >
-      拿个offer-开源&项目实战
+      DynamicThread-动态线程池项目实战
     </a>
   </div>
 </template>

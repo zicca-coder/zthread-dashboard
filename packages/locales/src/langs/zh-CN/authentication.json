@@ -1,10 +1,10 @@
 {
   "welcomeBack": "欢迎回来",
-  "pageTitle": "拿个offer社群出品 / 动态线程池实战项目",
+  "pageTitle": "动态线程池项目",
   "pageDesc": "对标美团动态、告警、可观测线程池",
   "loginSuccess": "登录成功",
   "loginSuccessDesc": "欢迎回来",
-  "loginSubtitle": "欢迎学习oneThread框架，入门基础架构不二之选！",
+  "loginSubtitle": "欢迎学习DynamicThread框架，入门基础架构不二之选！",
   "selectAccount": "快速选择账号",
   "username": "账号",
   "password": "密码",
